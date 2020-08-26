@@ -20,7 +20,7 @@
 body {
   position: relative;
   font-family: "Exo 2.0 Thin";
-  background: #000 url("/img/Pattern.png") center center;
+  background: #000 url("../img/Pattern.png") center center;
   background-size: cover;
   color: #fff;
 }
@@ -113,7 +113,7 @@ body::after {
   min-height: 480px;
   min-width: 320px;
   color: #000;
-  background: url("/img/bgblue.png");
+  background: url("../img/bgblue.png");
   display: block;
   z-index: 100;
 }
@@ -171,11 +171,11 @@ body::after {
 }
 
 .active {
-  background: url("/img/bgpink.png");
+  background: url("../img/bgpink.png");
 }
 
 .disabled {
-  background: url("/img/bggrey.png");
+  background: url("../img/bggrey.png");
 }
 
 .active-bounce {
