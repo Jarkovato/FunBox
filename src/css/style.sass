@@ -1,0 +1,126 @@
+@font-face 
+    font-family: "Exo 2.0 Thin"
+    font-style: normal
+    font-weight: 300
+    src: url(/src/fonts/Exo2.0-Thin.otf")
+    
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+
+body
+    position: relative
+    font-family: "Exo 2.0 Thin"
+    background: #000 url('/src/img/Pattern.png') center center
+    background-size: cover
+    color: #fff
+    &::after
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,0.5)
+        z-index: -1
+        
+    
+.main
+    min-height: 100vh
+    position: relative
+    &-title
+        text-align: center
+        font-weight: 300
+        color: #fff
+        font-size: 36px
+    &-content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &-cardlist 
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: flex-end
+        flex-wrap: wrap
+    &-card
+        font-family: 'Trebuchet MS', sans-serif
+        &__subtitle-top
+            font-size: 16px
+            color: #666666
+        &__title
+            font-size: 48px
+            color: #000
+            font-weight: bold
+            padding-top: 7px
+        &__subtitle-bottom
+            font-size: 14px
+            color: #666666
+            padding-top: 15px
+        &__title-small
+            font-size: 24px
+            display: block
+        &__content
+            cursor: pointer
+            overflow: hidden
+            position: relative
+            padding: 20px 50px
+            min-height: 480px
+            min-width: 320px
+            color: #000
+            background: url('/src/img/bgblue.png')
+            display: block
+            z-index: 100
+        &__image
+            position: absolute
+            left: -35px
+            bottom: -95px
+        &__img 
+            float: left
+        &__weight
+            position: absolute
+            background-color: #1698d9
+            width: 80px
+            height: 80px
+            border-radius: 80px
+            bottom: 15px
+            right: 15px
+            padding: 5px
+            color: #fff
+            text-align: center
+        &__weight-number
+                font-size: 42px
+                display: block
+        &__weight-unit
+                display: block
+                margin-top: -5px
+                font-size: 21px
+        &__footer
+            text-align: center
+            margin-top: 12px
+            &-text
+                font-size: 13px
+            u
+                color: #1698d9
+                text-decoration-style: dashed
+                font-size: 13px
+                font-weight: bold
+                cursor: pointer
+.active
+    background: url('/src/img/bgpink.png')
+.disabled
+    background: url('/src/img/bggrey.png')
+.active-bounce
+    background-color: #d91667
+.disabled-bounce
+    background-color: #b3b3b3
+.active-text
+    color: #d91667
+.disabled-text
+    color: #ffff66  
