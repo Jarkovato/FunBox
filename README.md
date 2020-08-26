@@ -1,2 +1,2 @@
 # FunBox
- Test task from FunNox
+ Test task from FunBox
